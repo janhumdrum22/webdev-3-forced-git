@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+</head>
+<script>
+
+function myFunction() {
+
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+ 
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+}
+
+window.onload = function() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+    
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+
+};
+
+</script>
+<body>
+
+<header>
+    <div class="logo-info">
+        <img src="images/small_castle.png" height="100px" width="100px">
+        <p>Travel Brechin</p>
+    </div>
+    <div class="navigation-links">
+        <ul class="navbar-nav flex-row" class="madimi-one-regular">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="visit.html">Visit</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+</body>
+</html>

@@ -8,58 +8,115 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="logo-info">
+            <img src="images/small_castle.png" height="100px" width="100px">
+        </div>
+        <div>
+            <p class="travel-brechin"> Travel brechin</p>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="history.html">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="visit.html">Visit</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="background-container-1">
+    <div class="gradient-overlay"></div>
+</div>
+
+            <div class="caption"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.co.uk%2Fpin%2F275141858462393650%2F&psig=AOvVaw2_G4jWhyQ35hrrWTdAY5h8&ust=1709734904353000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOD1wf6o3YQDFQAAAAAdAAAAABAE">High Street</a></div>
+        </div>
+        <div class="swiper-slide">
+<div class="background-container-2">
+    <div class="gradient-overlay"></div>
+</div>
+
+            <div class="caption"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbc.co.uk%2Fscotland%2Flandscapes%2Fbrechin%2F&psig=AOvVaw2O-7nz7dFApf_MwzRzDtKT&ust=1709737472512000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNjgicey3YQDFQAAAAAdAAAAABAE">South river Esk</a></div>
+        </div>
+        <div class="swiper-slide">
+<div class="background-container-3">
+    <div class="gradient-overlay"></div>
+</div>
+
+            <div class="caption"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.co.uk%2Fpin%2F275141858462393650%2F&psig=AOvVaw3ncBoEH1Odgoye7Irz51Vl&ust=1709738112391000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOCw_ve03YQDFQAAAAAdAAAAABAE">Cattle Market</a></div>
+        </div>
+        <div class="swiper-slide">
+<div class="background-container-4">
+    <div class="gradient-overlay"></div>
+</div>
+
+            <div class="caption"><a href="https://electricscotland.com/history/brechin/">Church Street</a></div>
+        </div>
+        <div class="swiper-slide">
+<div class="background-container-5">
+    <div class="gradient-overlay"></div>
+</div>
+
+            <div class="caption"><a href="https://www.pinterest.com/pin/574490496196326110/">High Street</a></div>
+        </div>
+    </div>
+ 
+    <div class="swiper-pagination"></div>
+    <div class="gradient-overlay"></div>
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
 
-function myFunction() {
-
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
- 
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
-}
-
-window.onload = function() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-    
-    dots.style.display = "inline";
-    moreText.style.display = "none";
-
-};
-
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: {
+            delay: 3000,
+        },
+        loop: true,
+        spaceBetween: 30,
+    });
 </script>
-<body>
 
-<header>
-    <div class="logo-info">
-        <img src="images/small_castle.png" height="100px" width="100px">
-        <p>Travel Brechin</p>
-    </div>
-    <div class="navigation-links">
-        <ul class="navbar-nav flex-row" class="madimi-one-regular">
-            <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="history.html">History</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="visit.html">Visit</a>
-            </li>
-        </ul>
-    </div>
-</header>
+<h3 style="padding-top:30px;">Brechin is located near the River South Esk, a historical spot of Scottish significance. With attributes that it originates from the old times, its past is still expressed in the modern day. </h3>
+
+<h3>Brechin has many splendid examples of architecture and unexpectedly important industries. 
+Structures around the town bear witness to its historical importance. In this case, Brechin Cathedral stands as an affirmation of its Christian roots. This cathedral is among only a few standing round towers left in Scotland dating from the 10th century, which means that it was strategically positioned as Brechin’s prominence during that period.</h3>
+
+<h3>Over time, several significant events have taken place in and around this part of Scotland’s history. During 1296 when there were upheavals as a consequence of Scottish Wars for Independence; English people temporarily took over Scotland’s rule at Brechin. However, subsequent years witnessed just how vital Brechin resilience became. Situated along River South Esk perched with Brechin Castle where English forces under King Edward I tried to suppress rebellious Scots in 1303 embodying spirit of Scotland.</h3>
+
+<h3>This marked a significant turning point when in 1641 Brechin became a royal burgh. Engineering, distilling and food processing soon emerged as its key industries shaping the economic landscape of Brechin and helping it grow. 
+In-depth examination into the historical roots of Brechin shows a fascinating mosaic of linguistic influences. The town name itself, speculated to have been Celtic, sums up Scotland's history with languages. From references to Druid leaders to Gaelic landscape features, the name of Brechin symbolizes layers upon layers of many historical significances.</h3>
+
+<h3>Today’s landmarks in Brechin are living proofs of its past. The Cathedral, Brechin Castle, and Maison Dieu Chapel do not only serve as architectural marvels but also represent remnants from this city’s heritage.</h3>
+
+<h3>Sir Robert Watson-Watt among others is honoured at St. Ninian Square for his contributions to science and technology that still remain relevant today in the city. This is an indication that even as it sails through modern times; Brechin still serves as a signpost for Scotland’s cultural wealth.</h3>
+
+<h3>One recent case showed Brechin's value to scotland when her majesty the Queen’s coffin was being laid rest at Brechin castle for a while, for which then it returned on its journey to England.</h3>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
