@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +9,391 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css">
+
+    <style>
+        .container {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .grid-item-left {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .grid-item-right {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+             display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .ram {
+            padding-right: 3rem;
+        }
+
+        .grid-item-right img {
+            width: 80%;
+            height: auto;
+            max-height: 300px;
+            margin: auto;
+        }
+
+        b {
+            font-size: 4rem;
+            font-weight: large;
+        }
+
+        strong {
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-<nav class="navbar navbar-expand-lg">
-      <div class="logo-info">
-        <img src="images/small_castle.png" height="100px" width="100px">
-    </div>
-    <div>
-        <p> Travel brechin</p>
-    </div>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="home.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="history.html">History</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="visit.html">Visit</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="logo-info">
+                <img src="images/small_castle.png" height="100px" width="100px">
+            </div>
+            <div>
+                <p class="travel-brechin"> Travel brechin</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="visit.html">Visit</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <h2 class="purp-border" style="width:100%;"><b> Things to do in Brechin</b></h2>
 
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Caledonian Railway</b>
+                        <br><br>
+                        The Caledonian Railway is a well known attraction for Brechin,
+                        as during certain seasons you can see trains like the Polar Express or Thomas the Tank Engine.
+                        The railway started from 1848 which went from brechin to the Bridge of Dun, 
+                        from which then longer distance trains would pick you up.
+                        A must for all vistors when limited time events are happening. 
+
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/trainjpg.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Brechin Town House Museum</b>
+                        <br><br>
+                        Although <strong>closed till 31st of March</strong>, the Brechin Town House Museum is part of a
+                        historic building constructed between 1789-1790 in the center of Brechin. This museum contains
+                        exhibitions of local history and changing contemporary exhibitions. Many artifacts of the old
+                        can be seen like stone axes, Pictish Stones, Jacobite Rising's collection, and more.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/Brechin_Town_House_Museum.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Brechin Cathedral</b>
+                        <br><br>
+                        Brechin Cathedral is a hisorically valuable building, located roughly in the heart of the city,
+                        its special due to being one of only 2 round towers in scotland. The tower has a height of 26m. 
+                        It is worth only quick visit due to not having access to the inside but rather only the outside.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/cathedral.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Brechin Castle</b>
+                        <br><br>
+                        A beautiful castle with depths of old history mixed with a garden which begs to be visited, both have incredible views and are both equally stunning. 
+                        The castle has history and architectural design dating back 13th century. It is truly outstanding place to visit when paired with a guide.
+           
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/Brechin-Castle.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Brechin Castle Country Park</b>
+                        <br><br>
+                        A great location for family and children, 
+                        this Country park has picturesque sights and a fairy trail which can be seen from far away looking quite magical.
+                        There are many activities for all of the family including: all terrain go-karts, sledge runs, climbing structures, water play and more.
+                        The popular sand pit with jumping pillow is guaranteed to keep children ecstatic.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/country_park.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Brechin Castle Garden Centre</b>
+                        <br><br>
+                        As a part of the Brechin Castle Country Park, it has a Restaurant and a gardening Centre. 
+                        The restaurant is spacious and certainly is suitable for large groups of people, there are light lunches, 
+                        cakes and sandwiches so most people will be satisfied. The gardening Centre has many varied kinds of plants or 
+                        garden decor which will make any gardening thusiast giddy.
+      
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/brechin-castle-garden.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Glencadam Distillery</b>
+                        <br><br>
+                        Get ready for a hidden gem of a tour around the distillery, it will provide history and show traditional techniques still in use to make Malt Whiskey.
+                        For any lover of achohol or history, this is certainly the place to go, though limited to small groups only with their personalised tours.  
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/distillery.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Brechin Golf Club</b>
+                        <br><br>
+                        A warmly welcoming Golf Course lies in the middle of angus. The organic scenery will not disapoint for it is refreshing. 
+                        The exciting putting surfaces and varied golf holes will make any golf enjoyer have a blast of a time.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/golf.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Brechin Arms Pub</b>
+                        <br><br>
+                        As Brechin's only pub it has a lot to live up to which it does, 
+                        although more on the smaller side, it has been able to keep itself up since the 1970's, 
+                        with a great atmosphere and great staff.
+                        If you need a little more pub culture in your life, this one will not disappoint.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/brechin-arms.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Dinos Kebab And Pizza House </b>
+                        <br><br>
+                        As brechin's one of two fast food locations, it has to do a lot, which it does quite successfully. 
+                        With its wide selection of meals and fast delivery, it is sure to satisfy most custormers. They also have ice cream and sweets so even the pickiest of children wont be disapointed.
+                        With their generally cheap pricing, it is hard not to temp yourself for a good, fast meal.
+
+           
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/dinos-pizza.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<h2 class="purp-border" style="width:100%;"><b> Other things within 10 miles</b></h2>
+
+  <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Montrose Beach</b>
+                        <br><br>
+                        The Montrose Beach is a beach that encompasses a large amount of the eastern side of montrose, with: large parking, 
+                        super clean toilets, a children playground and generally quiet atmosphere, it would be a shame to pass on it when visiting montrose. 
+                        For those who need a little coffee in their systems, there is also a cafe nearby.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/Montrose-Beach.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Montrose Museum and Art Gallery</b>
+                        <br><br>
+                        This museum became public in 1842 for which it tells the stories of montrose and its citizens, 
+                        this museum includes details of early bronze age swords to more modern stories of Marquis of Montrose 
+                        up to how montrose harbour came to be with finally the current chapter of montrose's story.
+                        The art gallery section contains more modern art as its made by locals, which can give you a feel for the creativity of the locals.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/montrose_museum.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Montrose Air Station Heritage Centre</b>
+                        <br><br>
+                        This museum tells the story of the first operational military station in the UK with its creation in 1913. 
+                        Here, the stories of the people who worked in the functioning Air Sation during 1913-1952 are told aswell.
+                        The Museum is suitable for all ages as it makes sure nobody is bored, it also has a no entry fee for teenagers under 16.  
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/montrose-air.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Edzell Castle and Garden</b>
+                        <br><br>
+                        This <strong>Temporarily Closed</strong> Castle is a sight to behold with its primarily lush garden and side attraction castle.
+                         On the castle premis there are also graves and old homes from the 16th century. 
+                         The garden is very well maintaned as such the design is truly exquisite.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/edzell-castle.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Shakin' Brig of Edzell</b>
+                        <br><br>
+                        This<strong> possibly closed</strong> shaking bridge was built around 1900, it is part of the pathway to the blue door walk. 
+                        It is quite exciting to jusmp on it since there is a feeling that it could fall apart,
+                        which would be the case normally however due to storm Babet the bridge was damaged as such there is no news on if the bridge is functional.
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/Shakin-Brig-Edzell.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <div class="row">
+            <div class="col-lg">
+                <div class="row gx-0">
+                    <div class="col-md-7 grid-item-left">
+                        <b>Blue Door Walk</b>
+                        <br><br>
+                        One of the most beautiful walks around the area, with its 90-120 minute walk, it should suffice for most people,
+                        although the parking spaces at the front are a bit limited, there is a road or even car park further up which will suffice.
+                        Loved by locals so you will love it too. 
+                    </div>
+
+                    <div class="col-md-5 grid-item-right">
+                        <img class="ram" src="images/visit/Blue-Door-Walk-Edzell.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

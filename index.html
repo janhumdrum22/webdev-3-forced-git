@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #71126c;
+            position: relative; 
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .click-box {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 24px; 
+        }
+
+        .click-box:hover {
+            background-color: #222;
+        }
+
+        img {
+            width: 80%; 
+            max-width: 600px; 
+            height: auto; 
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 24px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/logo-3.png" alt="Welcome Image">
+        <div class="click-box" onclick="window.location.href = 'home.html';">
+            <p>Go to home page</p> 
+        </div>
+    </div>
+    <footer>
+        <p> This webpage may not be suitable for the Safari browser</p>
+    </footer>
+</body>
+
+</html>
