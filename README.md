@@ -22,6 +22,6 @@ final git commits would be final checks like typos and whatnot, possible final s
 why such a purple? it looks ugly.
 i know it does, however the "Scottish Episcopal Church (Diocese of Brechin) Flag" has a slighly brighter purple, but that looked even worse, so i kept it a slighly darker purple, i could probably make the whole banner be the flag but that would just look tacky.
 the nav section works and doesnt need to be commented much as it does what its meant to do, it was originally on the right side, but then looking at other websites for reference i noticed most have the nav stuff on the left side, not right. so design wise it looks a bit better and works better for bootstrap nav.
-as mentioned previously the 7:5 ratio was covered, as was the challenges.
+as mentioned previously the 7:5 ratio was covered, as was the challenges. the general layout was made to “mimic” a boring travel sight at first but later on i started doing my own things with it.
 my only real issue is the mobile view for visit.html as its just not a nice sight, depending on how much it annoys me, i might try fix it, but otherwise its not crutial.
 i also noticed that bootstrap just doesnt work on safari, not sure why, perhaps it was the website i used to emulate it just didnt like it? to fix it i would probably have to put in somehow a safety net that only shows up on safari however i just dont know how to do that.
