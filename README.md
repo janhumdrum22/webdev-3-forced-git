@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # webdev-3-forced-git
 # second copy of the git hub version, as it seems to not load here
 
